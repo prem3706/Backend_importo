@@ -33,7 +33,10 @@ if (ini_get("session.use_cookies")) {
 // -------------------------------
 // 4. CORS + JSON headers
 // -------------------------------
-header("Access-Control-Allow-Origin: *");
+
+$allowedOrigin = getenv("CORS_ORIGIN") ?: "*";
+
+header("Access-Control-Allow-Origin: $allowedOrigin");
 header("Content-Type: application/json");
 
 echo json_encode([

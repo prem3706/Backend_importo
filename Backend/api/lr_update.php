@@ -2,7 +2,10 @@
 include("../config/dbConnection.php");
 
 header("Content-Type: application/json");
-header("Access-Control-Allow-Origin: *");
+
+$allowedOrigin = getenv("CORS_ORIGIN") ?: "*";
+
+header("Access-Control-Allow-Origin: $allowedOrigin");
 header("Access-Control-Allow-Methods: PUT, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 
