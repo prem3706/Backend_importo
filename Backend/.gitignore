@@ -1,0 +1,17 @@
+# Node
+node_modules/
+build/
+
+# Env
+.env
+.env.production
+
+# Docker volumes
+mysql_data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+../frontend/
+frontend/

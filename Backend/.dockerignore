@@ -1,0 +1,22 @@
+# Git
+.git
+.gitignore
+
+# Node / frontend junk
+node_modules
+npm-debug.log
+
+# Logs
+*.log
+lr_debug.log
+
+# Env & secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor configs
+.vscode
+.idea
