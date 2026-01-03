@@ -1,9 +1,8 @@
 <?php
-$allowed_origin = $_SERVER['HTTP_ORIGIN'] ?? 'http://localhost:3000';
-header("Access-Control-Allow-Origin: $allowed_origin");
-header("Content-Type: application/json");
-header("Access-Control-Allow-Origin: *");
 
+header("Content-Type: application/json");
+
+header("Access-Control-Allow-Origin: *");
 include("../config/dbConnection.php");
 
 $name = $_POST['contact_name'] ?? '';

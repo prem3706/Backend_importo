@@ -2,8 +2,7 @@
 include("../config/dbConnection.php");
 
 header("Content-Type: application/json");
-$allowed_origin = $_SERVER['HTTP_ORIGIN'] ?? 'http://localhost:3000';
-header("Access-Control-Allow-Origin: $allowed_origin");
+header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: PUT, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 

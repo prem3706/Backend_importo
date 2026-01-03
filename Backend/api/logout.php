@@ -33,9 +33,7 @@ if (ini_get("session.use_cookies")) {
 // -------------------------------
 // 4. CORS + JSON headers
 // -------------------------------
-$allowed_origin = $_SERVER['HTTP_ORIGIN'] ?? 'http://localhost:3000';
-header("Access-Control-Allow-Origin: $allowed_origin");
-header("Access-Control-Allow-Credentials: true");
+header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
 echo json_encode([
